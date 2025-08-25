@@ -47,7 +47,7 @@ class Solution(object):
             if is_good:
             # If the current candidate prefix is found in all strings
                 return for_check
-                # PSEUDOCODE: Return this prefix (it's the longest one that works)
+                # Return this prefix (it's the longest one that works)
         
         return ""
         # If no common prefix found after trying all possibilities, return empty string
