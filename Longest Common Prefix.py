@@ -24,6 +24,9 @@
 class Solution(object):
     def longestCommonPrefix(self, strs):  
         """
+        :type strs: List[str]
+        :rtype: str
+        
         The core idea is simple: start with the entire first word as a guess for the prefix and keep
         making it shorter until it fits the start of all the other words.
         """      
