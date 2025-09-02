@@ -66,6 +66,7 @@ class Solution(object):
         total = 0
         
         # Iterate through the string up to the second-to-last character.
+        # O(n)
         for i in range(len(s) - 1):
             # If the current numeral is smaller than the next one, subtract it.
             if roman_map[s[i]] < roman_map[s[i+1]]:
@@ -78,3 +79,5 @@ class Solution(object):
         total += roman_map[s[-1]]
         
         return total
+    
+# O(n)

@@ -60,6 +60,7 @@ class Solution(object):
         bracket_map = {")": "(", "}": "{", "]": "["}
 
         # Iterate through each character in the string.
+        # O(n)
         for char in s:
             # If the character is a closing bracket.
             if char in bracket_map:
@@ -77,3 +78,5 @@ class Solution(object):
         
         # A valid string will result in an empty stack at the end.
         return not stack
+    
+# O(n)

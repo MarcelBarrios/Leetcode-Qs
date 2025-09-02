@@ -48,6 +48,7 @@ class Solution(object):
         max_area = 0         # Store the area of that rectangle
 
         # Loop through each rectangle's dimensions
+        # O(n)
         for length, width in dimensions:
             
             # Calculate the square of the current diagonal
@@ -65,4 +66,5 @@ class Solution(object):
                 max_area = max(max_area, length * width)
         
         return max_area
-        
+
+# O(n)

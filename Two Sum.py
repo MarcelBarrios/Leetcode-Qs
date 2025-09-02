@@ -45,6 +45,7 @@ class Solution(object):
         seen = {}
 
         # Enumerate gives us both the index (i) and the value (num)
+        # O(n)
         for i, num in enumerate(nums):
             # Calculate the number we need to find to reach the target
             complement = target - num
@@ -58,3 +59,5 @@ class Solution(object):
             # If the complement is not found, add the current number and its
             # index to the dictionary for future checks.
             seen[num] = i
+
+# O(n)
