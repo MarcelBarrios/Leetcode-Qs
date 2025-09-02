@@ -32,10 +32,10 @@
 # Both list1 and list2 are sorted in non-decreasing order.
 
 # Definition for singly-linked list.
-# class ListNode(object):
-#     def __init__(self, val=0, next=None):
-#         self.val = val
-#         self.next = next
+class ListNode(object):
+    def __init__(self, val=0, next=None):
+        self.val = val
+        self.next = next
 
 class Solution(object):
     def mergeTwoLists(self, list1, list2):
