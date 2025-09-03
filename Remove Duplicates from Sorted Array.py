@@ -59,6 +59,7 @@ class Solution(object):
         k = 1
         
         # iterate with a fast-moving pointer 'i' from the second element.
+        # O(n)
         for i in range(1, len(nums)):
             # If the current element is different from the previous one...
             if nums[i] != nums[i-1]:
@@ -69,3 +70,5 @@ class Solution(object):
                 
         # k represents the number of unique elements.
         return k
+    
+    # O(n)
