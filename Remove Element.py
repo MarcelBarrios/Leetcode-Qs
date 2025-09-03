@@ -53,6 +53,9 @@ class Solution(object):
         :type nums: List[int]
         :type val: int
         :rtype: int
+
+        The idea is to have one pointer scan the array and another pointer that keeps track of the 
+        next available position to place an element that we want to keep.
         """
         # k is the slow-moving pointer. It indicates the next position
         # to place an element that is NOT equal to val.
@@ -70,4 +73,4 @@ class Solution(object):
         
         # After the loop, k will be the new length of the array.
         return k
-    # O(n)
+# O(n)
