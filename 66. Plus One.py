@@ -45,6 +45,7 @@ class Solution(object):
         n = len(digits)
         
         # This starts a for loop that iterates backward.
+        # O(n)
         for i in range(n - 1, -1, -1):
             # check if digits[i] is 9
             if digits[i] < 9:
@@ -60,3 +61,4 @@ class Solution(object):
         # This line is only reached if the entire loop finished (meaning all digits were 9). 
         # It creates a new list by placing a 1 at the front of our list of zeros.
         return [1] + digits
+    # O(n)
