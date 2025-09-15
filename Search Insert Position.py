@@ -42,6 +42,7 @@ class Solution(object):
         left, right = 0, len(nums) - 1
         
         # Loop as long as the search range is valid.
+        # O(log n)
         while left <= right:
             # Calculate the middle index to avoid potential overflow.
             mid = left + (right - left) // 2
@@ -63,3 +64,4 @@ class Solution(object):
         # If the loop finishes, the target was not found.
         # 'left' is now the index where the target should be inserted.
         return left
+# O(log n)
