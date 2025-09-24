@@ -30,6 +30,9 @@ class Solution(object):
         """
         :type n: int
         :rtype: int
+
+        The key insight is that the number of ways to reach the n-th step is the sum of the ways to reach
+        the two steps right before it.
         """
         # Handle the base cases for the first two steps.
         if n <= 2:
@@ -41,6 +44,7 @@ class Solution(object):
         two_steps_back = 1 # Represents ways to climb n-2 stairs
         
         # Iterate from the 3rd step up to the n-th step.
+        # O(n)
         for _ in range(3, n + 1):
             # The number of ways to reach the current step is the sum of the ways to reach the previous two.
             current_ways = one_step_back + two_steps_back
