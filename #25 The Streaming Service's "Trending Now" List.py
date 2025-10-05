@@ -43,6 +43,15 @@ def get_trending_songs(songs, k):
     trending_list = [song for count, song in min_heap]
     
     return trending_list
+# Let N be the total number of songs in the input list, and let U be the number of unique songs.
+
+# Time Complexity: O(N + U log K)
+
+# Counter(songs): This step requires iterating through all N songs once. This is O(N).
+
+# Heap Operations: We then iterate through the U unique songs. For each unique song, we perform a heappush operation, which takes O(log K) time (since the heap size is at most K+1). This gives us a total of O(U log K).
+
+# The total time complexity is O(N + U log K), which is significantly better than an O(N log N) approach if K is much smaller than N.
 
 # Example Usage:
 play_log = ["Circles", "Blinding Lights", "Circles", "Savage Love", "Circles", "Blinding Lights", "Watermelon Sugar"]

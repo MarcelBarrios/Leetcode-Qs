@@ -7,8 +7,8 @@
 
 # Your task is to write a function that, given a list of available coin denominations and a total amount 
 # of change to be made, calculates the minimum number of coins required to make that exact amount. If it's
-#  impossible to make the change with the given coins (for example, trying to make 7 cents with only dimes),
-#  the function should indicate that.
+# impossible to make the change with the given coins (for example, trying to make 7 cents with only dimes),
+# the function should indicate that.
 
 def make_change(coins, amount):
     """

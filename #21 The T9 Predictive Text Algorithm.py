@@ -12,7 +12,9 @@
 
 def generate_t9_combinations(digits):
     """
-    Generates all possible letter combinations for a given string of T9 digits.
+    The core idea is to build the combination one character at a time. We'll make a choice for the first 
+    digit, then recursively handle the rest of the digits. Once that recursive path is fully explored, 
+    we "backtrack" and try the next choice for the first digit.
 
     :param digits: A string containing digits from '2' to '9'.
     :return: A list of all possible letter combinations.

@@ -60,6 +60,15 @@ def time_to_rot(grid):
     
     # After the BFS, if there are still fresh oranges, it's impossible.
     return minutes_elapsed if fresh_oranges_count == 0 else -1
+# Let R be the number of rows and C be the number of columns in the grid.
+
+# Time Complexity: O(R * C)
+
+# The initial scan of the grid takes O(R * C).
+
+# The BFS process ensures that each cell is enqueued and dequeued at most once. Therefore, the BFS part also takes O(R * C).
+
+# The total time complexity is linear with respect to the number of cells in the grid.
 
 # Example Usage:
 crate = [[2, 1, 1], [1, 1, 0], [0, 1, 1]]
